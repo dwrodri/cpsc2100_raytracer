@@ -1,0 +1,70 @@
+window
+  name gotchabro ;
+  viewpoint   0 0 4
+  windowwidth  16
+  windowheight 6
+  columns  1500
+  ambient     4 4 4 ;
+
+plane
+   name sidewall ;
+   color 0 0 0
+   diffuse 1 1 1
+   reflective 1 1 1 ; 
+   orient1 1 0 1
+   orient2 0 1 0
+   point 3  -4 -6 ;
+
+plane 
+   name floor ;
+   color 0 0 0
+   diffuse 1 1 1
+   reflective 1 1 1 ;
+   orient1 1 0 0
+   orient2 -1  0 1
+   point 0 -3.5 -3 ;
+
+plane 
+   name backwall ;
+   color 0 0 0
+   diffuse 1 1 1  
+   reflective 1 1 1;
+   point 0 0 -6
+   orient1 1 0 0
+   orient2 0 1 0 ;
+
+sphere 
+   name ball1 ;
+   color 255 255 0
+   diffuse 1 1 1 ;
+   center 0 -2.3 -3
+   radius 1 ;
+
+sphere 
+   name ball2 ;
+   color 69 69 69
+   diffuse 2 2 2 ;
+   center -1 2 -3
+   radius .69 ;
+
+sphere 
+   name ball3 ;
+   color 0 255 0
+   diffuse 2 2 2 ;
+   center -3 2 -3
+   radius .69 ;
+
+pointlight 
+   name light1 ;
+   brightness 24 
+   color 255 255 255
+   center 2 0.35 0.25 ;
+
+pointlight 
+   name light2 ;
+   brightness 20 
+   color 128 128 128
+   center -2 5 -5 ;
+
+
+

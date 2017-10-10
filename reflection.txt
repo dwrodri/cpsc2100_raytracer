@@ -1,0 +1,81 @@
+window
+  name theview ;
+  viewpoint   0 0 4
+  windowwidth  8
+  windowheight 6
+  columns  2000
+  ambient     4 4 4 ;
+
+plane
+   name mirror ;
+   color 255 255 255
+   diffuse 0 0 0
+   reflective 1 1 1 ; 
+   orient1 1 0 1.1
+   orient2 0 1 0
+   point       3  -4 -6 ;
+
+plane 
+   name floor ;
+   color 128 128 255
+   diffuse 1 1 1
+   reflective 0 0 0 ;
+   orient1 1 0 0
+   orient2 0 0 1
+   point 0 -3.1 -1 ;
+
+plane 
+   name backwall ;
+   color 255 255 0
+   diffuse 1 1 1  ;
+   point 0 0 -6
+   orient1 1 0 0
+   orient2 0 1 0 ;
+
+pointlight 
+   name leftspot ;
+   brightness 18 
+   color 255 0 0
+   center -3 0.5 -0.25 ;
+
+pointlight 
+   name rightspot ;
+   brightness  18
+   color 0 255 0
+   center  3 0.5 -0.25 ;
+
+sphere 
+   name snowbase ;
+   color 255 255 255
+   diffuse 1 1 1 ;
+   center 0 -2.3 -3
+   radius 1 ;
+
+sphere 
+   name hidden ;
+   color 255 0 0
+   diffuse 1 1 1 ;
+   center 0 -2.5 -5
+   radius 0.5 ;
+
+sphere 
+   name snowmiddle ;
+   color 255 255 255
+   diffuse 1 1 1 ;
+   center 0 -0.6 -3
+   radius .8 ;
+
+sphere 
+   name snowhead ;
+   color 255 255 255
+   diffuse 1 1 1 ;
+   center 0 0.4 -3
+   radius .6 ;
+
+sphere 
+   name floater ;
+   color 255 255 255
+   diffuse 0 0 0 
+   reflective 1 1 1 ;
+   center -3 2.5 -4
+   radius 1.0 ;
